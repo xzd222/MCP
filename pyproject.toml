@@ -9,8 +9,9 @@ description = "MCP 矿权日报 Agent：3 个 MCP server + 自写 ReAct 编排"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "mcp>=1.0.0",
+    "mcp>=2.0.0",
     "openai>=1.40.0",
+    "python-dotenv>=1.0",
 ]
 
 [project.optional-dependencies]
