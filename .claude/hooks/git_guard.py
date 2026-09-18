@@ -3,7 +3,7 @@
 
 规则：
   1. 禁止 push --force / -f / --force-with-lease
-  2. 禁止直接提交到 main / master（允许首次初始提交）
+  2. 分支保护：默认关闭（solo 直接提交 main；团队协作再启用，见 2a）
   3. 禁止暂存疑似密钥文件（.env、id_rsa、*.pem 等，或内容含 sk- 明文）
   4. 暂存了 .py 改动时，commit 前强制 ruff check + pytest（未安装则跳过）
 
@@ -73,17 +73,17 @@ def main() -> None:
         if any(t in ("--force", "-f", "--force-with-lease") for t in parts):
             _emit_deny("禁止 force push。请用普通 push，或与团队确认后走 rebase 流程。")
 
-    # 2) 仅对 git commit 做分支/密钥/质量校验
+    # 2) 仅对 git commit 做密钥/质量校验
     if len(parts) < 2 or parts[1] != "commit":
         return
 
-    # 2a) 分支保护（允许首次初始提交）
-    proc, _ = _run(["git", "rev-parse", "--verify", "HEAD"], cwd)
-    if proc is not None and proc.returncode == 0:
-        proc2, _ = _run(["git", "branch", "--show-current"], cwd)
-        branch = (proc2.stdout or "").strip() if proc2 else ""
-        if branch in ("main", "master"):
-            _emit_deny(f"禁止直接提交到 `{branch}`。请先 `git checkout -b feature/xxx`。")
+    # 2a) 分支保护：solo 项目默认关闭。团队协作时取消下方注释即可禁止直接提交 main/master。
+    # proc, _ = _run(["git", "rev-parse", "--verify", "HEAD"], cwd)
+    # if proc is not None and proc.returncode == 0:
+    #     proc2, _ = _run(["git", "branch", "--show-current"], cwd)
+    #     branch = (proc2.stdout or "").strip() if proc2 else ""
+    #     if branch in ("main", "master"):
+    #         _emit_deny(f"禁止直接提交到 `{branch}`。请先 `git checkout -b feature/xxx`。")
 
     # 2b) 密钥文件/明文扫描（只看已暂存内容）
     proc, _ = _run(["git", "diff", "--cached", "--name-only", "-z"], cwd)

@@ -11,7 +11,7 @@
 ## 硬性规则（违反即重做）
 1. 密钥不入库：API key 只写 `.env`（已 gitignore），代码/文档/日志禁止出现 `sk-` 明文。
 2. 提交前过 `ruff check` + `pytest`（由 hook 强制）。
-3. 禁止 `push --force`、禁止直接提交 `main`/`master`（由 hook 强制）。
+3. 禁止 `push --force`、禁止提交密钥（由 hook 强制）。
 4. 每个模块带测试；函数/工具带类型标注 + docstring。
 
 ## 渐进式披露（按需读取，别全读）

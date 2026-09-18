@@ -1,0 +1,56 @@
+[
+  {
+    "id": "n1",
+    "title": "Pilbara Minerals 第三季度锂精矿产量创新高",
+    "url": "https://example.com/news/pilbara-output",
+    "source": "mining.com",
+    "published_at": "2026-09-17",
+    "summary": "Pilbara Minerals 宣布第三季度锂精矿产量达 8.5 万吨，同比增长 20%。",
+    "body": "Pilbara Minerals 宣布第三季度锂精矿产量达到 8.5 万吨，同比增长 20%，创历史新高。公司预计全年产量将落在指导区间上限，旗下 Pilgangoora 项目扩产进度顺利。"
+  },
+  {
+    "id": "n2",
+    "title": "澳洲发布关键矿产战略更新，锂与稀土成重点",
+    "url": "https://example.com/news/aus-critical-minerals",
+    "source": "澳洲 DISR",
+    "published_at": "2026-09-15",
+    "summary": "澳洲政府更新关键矿产战略，将锂、稀土列为优先支持矿种。",
+    "body": "澳洲工业科学资源部发布关键矿产战略更新，明确锂、稀土、钴为优先支持矿种，将提供融资与审批绿色通道，以强化供应链安全。"
+  },
+  {
+    "id": "n3",
+    "title": "智利铜矿工人罢工波及全球铜供应",
+    "url": "https://example.com/news/chile-copper-strike",
+    "source": "mining.com",
+    "published_at": "2026-09-14",
+    "summary": "智利大型铜矿罢工进入第二周，市场担忧供应收紧。",
+    "body": "智利一家大型铜矿的工人罢工进入第二周，尚未达成协议，市场担忧全球铜供应收紧，LME 铜价短线走高。"
+  },
+  {
+    "id": "n4",
+    "title": "铁矿石港口库存连续三周下降",
+    "url": "https://example.com/news/iron-ore-inventory",
+    "source": "上海钢联",
+    "published_at": "2026-09-12",
+    "summary": "国内铁矿石港口库存连续三周下降，需求端回暖。",
+    "body": "据上海钢联统计，国内主要港口铁矿石库存连续三周下降，累计减少 320 万吨，钢厂补库需求回暖支撑矿价。"
+  },
+  {
+    "id": "n5",
+    "title": "中国稀土集团推进出口管制合规",
+    "url": "https://example.com/news/rare-earth-export",
+    "source": "中国稀土集团",
+    "published_at": "2026-09-10",
+    "summary": "中国稀土集团表示将严格执行出口管制新规。",
+    "body": "中国稀土集团召开会议，表示将严格执行稀土出口管制新规，优化出口产品结构，保障战略资源安全。"
+  },
+  {
+    "id": "n6",
+    "title": "金价在避险情绪下高位震荡",
+    "url": "https://example.com/news/gold-price",
+    "source": "mining.com",
+    "published_at": "2026-09-08",
+    "summary": "避险情绪推动金价高位震荡，矿业股表现分化。",
+    "body": "受避险情绪影响，国际金价高位震荡，黄金矿业股表现分化，市场关注美联储后续政策路径。"
+  }
+]

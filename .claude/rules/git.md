@@ -1,8 +1,8 @@
 # Git 规范
 
 ## 分支
-- 禁止直接提交 `main`/`master`（hook 强制；允许首次初始提交）
-- 工作都在 `git checkout -b feature/xxx`，最后合并/PR 回 main
+- solo 项目：直接提交 `main`（hook 默认不拦截）
+- 团队协作：可启用 hook 中的分支保护，工作走 `feature/xxx` + PR
 
 ## 提交信息（Conventional Commits）
 ```
