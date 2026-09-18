@@ -1,0 +1,34 @@
+# 环境与密钥
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# 工具缓存
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 大体积样例数据（真实 PDF/数据走下载链接）
+data/*.pdf
+*.log
+
+# 面试资料（仅本地，不提交）
+面试题目.docx
+面试题目分析.md
