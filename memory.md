@@ -12,17 +12,17 @@
 - LLM：aihubmix `gpt-4o-free`（base_url=https://aihubmix.com/v1），失败自动回退 dry-run
 - 结构：servers/（3 MCP server）+ agent/（编排）+ tests/
 
-## 进度
-- [x] 1 骨架 + venv + git + hook
+## 进度（全部完成）
+- [x] 1 骨架 + venv + git + hook（git_guard）
 - [x] 2 mining-news（search / fetch_article）
 - [x] 3 mineral-pdf（extract_resources）
 - [x] 4 lme-price（get_price / get_trend）
 - [x] 5 ReAct agent（含 LLM 失败回退，25 测试绿）
-- [ ] 6 mcp-config.json + RUN.md + docker-compose
-- [ ] 7 README
-- [ ] 8 全量检查 + 推送
+- [x] 6 mcp-config.json + RUN.md + docker-compose
+- [x] 7 README（架构图）
+- [x] 8 全量检查 + 推送（8 提交，git status 干净）
 
 ## 注意
-- 本机连不上 GitHub(HTTPS) 与 aihubmix，push 用 SSH，演示用 `--dry-run`
+- push 用 SSH；本机连不上 GitHub(HTTPS) 与 aihubmix
 - hook（.claude/settings.json）需 /hooks 或重启才生效
 - key 在 .env（gitignore）；面试资料 docx/md 不提交
