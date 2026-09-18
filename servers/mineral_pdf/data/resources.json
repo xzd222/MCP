@@ -1,0 +1,54 @@
+[
+  {
+    "id": "pil-ind",
+    "project": "Pilgangoora",
+    "company": "Pilbara Minerals",
+    "commodity": "锂",
+    "category": "Indicated",
+    "source_url": "https://example.com/pdfs/pilbara-43-101.pdf",
+    "ore_tonnes_mt": 142.5,
+    "grade": 1.25,
+    "grade_unit": "% Li2O",
+    "metal": 4.45,
+    "metal_unit": "Mt LCE"
+  },
+  {
+    "id": "pil-inf",
+    "project": "Pilgangoora",
+    "company": "Pilbara Minerals",
+    "commodity": "锂",
+    "category": "Inferred",
+    "source_url": "https://example.com/pdfs/pilbara-43-101.pdf",
+    "ore_tonnes_mt": 78.3,
+    "grade": 1.12,
+    "grade_unit": "% Li2O",
+    "metal": 2.2,
+    "metal_unit": "Mt LCE"
+  },
+  {
+    "id": "nwt-ind",
+    "project": "Red Chris",
+    "company": "Newmont",
+    "commodity": "金",
+    "category": "Indicated",
+    "source_url": "https://example.com/pdfs/newmont-redchris-43-101.pdf",
+    "ore_tonnes_mt": 320.0,
+    "grade": 0.45,
+    "grade_unit": "g/t Au",
+    "metal": 4.6,
+    "metal_unit": "Moz Au"
+  },
+  {
+    "id": "nwt-inf",
+    "project": "Red Chris",
+    "company": "Newmont",
+    "commodity": "金",
+    "category": "Inferred",
+    "source_url": "https://example.com/pdfs/newmont-redchris-43-101.pdf",
+    "ore_tonnes_mt": 210.0,
+    "grade": 0.38,
+    "grade_unit": "g/t Au",
+    "metal": 2.6,
+    "metal_unit": "Moz Au"
+  }
+]
