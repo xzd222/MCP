@@ -64,7 +64,9 @@ class PriceStore:
                 return {"commodity": c.name, "date": p.date, "price": p.price, "unit": c.unit}
         return None
 
-    def get_trend(self, commodity: str, days: int, today: date | None = None) -> list[dict[str, Any]]:
+    def get_trend(
+        self, commodity: str, days: int, today: date | None = None
+    ) -> list[dict[str, Any]]:
         """查询某品种近 N 天的价格走势（按日期升序）；未命中返回空列表。"""
         c = self._resolve(commodity)
         if c is None:
