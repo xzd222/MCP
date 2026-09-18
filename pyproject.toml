@@ -23,6 +23,11 @@ dev = [
 [tool.setuptools.packages.find]
 include = ["servers*", "agent*"]
 
+[tool.setuptools.package-data]
+"servers.mining_news" = ["data/*.json"]
+"servers.mineral_pdf" = ["data/*.json"]
+"servers.lme_price" = ["data/*.json"]
+
 [tool.ruff]
 line-length = 100
 target-version = "py311"
